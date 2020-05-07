@@ -23,5 +23,22 @@ void main() {
    
 }
 
-////////////////////////
+/////////////////Booleanos y Condiciones 10.- //////////////////
+
+void main() {
+  
+  bool activado = true;
+  
+  print(activado);
+  
+  if(!activado){ //activado= false
+    print('El motor esta funcionando');
+  }else{
+    print('el motor esta apagado'); //print false case
+  }
+  
+  
+}
+
+
 
