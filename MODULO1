@@ -158,3 +158,28 @@ class Heroe{
 }
 
 
+/////////////////FORMA CORTA DE DEFINIR CLASES 15.- //////////////////
+void main() {
+
+  
+  final wolverine = new Heroe(poder:'Regeneracion',nombre: 'Logan1'); // se lanza al constructor, el constructor lo procesa y obtienes el objeto nombreDeclase.propiedad
+  
+  print(wolverine);
+  
+}
+
+class Heroe{
+  
+  String nombre;
+  String poder;
+  
+
+  Heroe({this.nombre, this.poder});
+  
+   String toString()=>'nombre: $nombre - poder: $poder'; 
+    
+}
+
+
+
+
