@@ -109,3 +109,52 @@ String saludar({String texto,String nombre}){
 String saludar2({String texto,String nombre})=>'$texto $nombre';
 
 
+/////////////////Clases en DART 14.- //////////////////
+
+void main() {
+
+  //new es opcional para definir una nueva instancia
+  //final es para decir que esa variable va a cambiar de su valor como tal
+ 
+  /*
+   //final exampple
+   
+ final wolverine = new Heroe();
+ wolverine= new Heroe(); //esto no puede ser
+ 
+ */
+  
+  //LA DIFERENCIA ENTRE EL METODO Y UNA FUNCION
+  //EL METODO SE ENCUENTRA DENTRO DE UNA CLASE
+  //FUNCION LA QUE SE ENCUENTRA FUERA DE UNA CLASE
+  
+  final wolverine = new Heroe(poder:'Regeneracion'); // se lanza al constructor, el constructor lo procesa y obtienes el objeto nombreDeclase.propiedad
+
+  print(wolverine.poder);
+   print(wolverine.nombre);
+  print(wolverine);
+  
+  
+  
+}
+
+class Heroe{
+  
+  String nombre;
+  String poder;
+  
+  //el constructor tiene el mismo nombre de la clase //el sinnombre es para el default
+  Heroe({String nombre='sin nombre', String poder}){ //lo que recibe el constructor
+    this.nombre= nombre;
+    this.poder= poder;
+  }
+    
+   String toString(){ //asignacion tostring al metodo 
+     
+     return 'nombre: ${this.nombre} - poder: ${this.poder}'; //retorna variable nombre y poder
+     
+   }
+  
+}
+
+
