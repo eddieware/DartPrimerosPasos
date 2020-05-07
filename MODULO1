@@ -1,0 +1,27 @@
+NOTAS.-
+///////////////////////////HOLA MUNDO 8.- /////////////////////
+
+HotReload = Renderizacion Manteniendo el estado.
+
+///////////////////////TIPOS DE DATOS 9.- ////////////////////
+
+
+void main() {
+  
+  //NUMEROS
+  int empleados = 10;
+  double pi = 3.1415;
+  var numero = 1.0;
+  
+  print('$empleados - $pi -$numero');
+    
+    //STRINGS
+  String nombre = 'Tony';//0-3
+  print(nombre);
+  print(nombre[0]);
+  print(nombre[nombre.length-1]);//length= 4-1=3 =tony de 0 a 3 print Y
+   
+}
+
+////////////////////////
+
