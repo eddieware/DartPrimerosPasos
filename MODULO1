@@ -93,6 +93,19 @@ void main() {
 }
 
 /////////////////Funciones en DART 13.- //////////////////
+void main() {
 
+  String mensaje = saludar2(nombre: 'Fernando', texto:'Hola, ');
+  print(mensaje);
+}
+
+String saludar({String texto,String nombre}){
+  //void se aplico para aclarar a dart que no regrersa nada que pueda ser almacenado en variables y controlar mejor el flujo.
+  //print('Hola');
+  return '$texto $nombre';
+}
+
+//misma funcion usando la funcion de flecha
+String saludar2({String texto,String nombre})=>'$texto $nombre';
 
 
