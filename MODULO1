@@ -42,3 +42,31 @@ void main() {
 
 
 
+/////////////////Tipo de Dato Lista 11.- //////////////////
+
+
+
+void main() {
+  
+  //Una estructura de datos dinámica es aquella en la que el tamaño ocupado en memoria puede modificarse durante la ejecución del programa
+  
+//LISTA: Coleccion de objetos que tienen algo en comun
+  
+  List<int> numeros = [1,2,3,4,5];
+  print(numeros);
+  
+  numeros.add(6);
+  print(numeros);
+  
+  // Tamaño fijo
+  List masNumeros = List(10);
+  print(masNumeros);
+  masNumeros.add(1);// Esto no se puede hacer por eso marca Script error
+  print(masNumeros);
+}
+
+/////////////////Tipo de Dato Map 12.- //////////////////
+
+
+
+
