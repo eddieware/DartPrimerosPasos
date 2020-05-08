@@ -338,3 +338,58 @@ class Villano extends Personaje{
   int maldad;
 }
 
+
+
+/////////////////Mixins 20.- //////////////////
+
+
+abstract class Animal{
+  //abstract para que no se puedan crear clases de esta instancia
+  
+  /*
+    Mixins are very helpful when we want to share a behavior across multiple classes that don’t share the same class hierarchy, or when it doesn’t make sense to implement such a behavior in a superclass.*/
+  
+}
+
+abstract class Mamifero extends Animal{}
+
+abstract class Ave extends Animal{}
+
+abstract class Pez extends Animal{}
+
+
+abstract class Volador {
+  void volar()=>print('Estoy Volando!!!');
+}
+
+abstract class Caminante {
+  void volar()=>print('Estoy Caminando!!!');
+}
+
+abstract class Nadador {
+  void nadar()=>print('Estoy Nadando!!!');
+}
+
+//with Mixins
+class Delfin extends Mamifero with Nadador{}
+
+class Murcielago extends Mamifero with Caminante, Volador {}
+
+class Gato extends Mamifero with Caminante{}
+
+class Paloma extends Ave with Caminante, Volador{}
+
+class Pato extends Ave with Caminante, Volador, Nadador{}
+
+class Tiburos extends Pez with Nadador{}
+
+class PezVolador extends Pez with Nadador, Volador{}
+
+
+void main(){
+  final pato = new Pato();
+  pato.volar();
+  
+  final pezVolador = PezVolador();
+  pezVolador.nadar();
+}
