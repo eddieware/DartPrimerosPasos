@@ -393,3 +393,25 @@ void main(){
   final pezVolador = PezVolador();
   pezVolador.nadar();
 }
+
+
+/////////////////Futures 21.- //////////////////
+
+void main(){
+  
+  //Future tarea async que se realiza a destiempo
+  
+  print('Estamos a punto de pedir estados');
+  httpGet('https://api.nasa.com/aliens').then((data){
+    print(data);
+    
+  });
+  
+  print('ultima linea');
+}
+
+Future<String> httpGet(String url){
+  return Future.delayed(new Duration(seconds: 4), (){
+    return 'Hola Mundo';
+  });
+}
