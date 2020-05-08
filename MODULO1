@@ -262,3 +262,48 @@ class Cuadrado{
 
 
 
+/////////////////clases abstractas 18.- //////////////////
+
+
+
+
+void main(){
+  
+  //la clase abtracta no se puede instanciar con nee
+  //Sirve para obligara a las demas clases a que implementen sus metodos
+  final perro = new Perro();
+  perro.emitirSonido();
+  
+  final gato= new Gato();
+  gato.emitirSonido();
+}
+
+
+abstract class Animal{
+  
+  int patas;
+  
+  void emitirSonido();
+}
+
+class Perro implements Animal{
+  
+  int patas;
+  int colas;
+  
+  void emitirSonido()=>print('GuauUUUUUUU!!!!!!!!');
+  
+}
+
+
+class Gato implements Animal{
+  
+   int patas;
+ 
+  
+  void emitirSonido()=>print('MIauUUUUUUU!!!!!!!!');
+  
+}
+
+
+
