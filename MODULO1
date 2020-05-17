@@ -415,3 +415,25 @@ Future<String> httpGet(String url){
     return 'Hola Mundo';
   });
 }
+
+/////////////////Async and Await 22.- //////////////////
+
+void main() async {
+  
+  //Future tarea async que se realiza a destiempo
+  
+  print('Estamos a punto de pedir estados');
+  String data = await httpGet('https://api.nasa.com/aliens');
+  print(data);
+  print('ultima linea');
+}
+
+Future<String> httpGet(String url){
+  return Future.delayed(new Duration(seconds: 4), (){
+    return 'Hola Mundo';
+  });
+}
+
+
+
+
